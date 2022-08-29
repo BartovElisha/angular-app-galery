@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <div class="mb-3">
+    <label for="url" class="form-label">Image url</label>
+    <input type="url" class="form-control" id="url" placeholder="Enter img url" #url>
+  </div>
+  <div class="d-grid gap-2">
+    <button (click)="showImage(url)" class="btn btn-primary" type="button">Show url Image</button>
+  </div>
+
+  <!-- imagesArray moved to components app-display-cards -->
+  <!-- <app-display-cards [images]="imagesArray"></app-display-cards> -->
+  <app-image [imageUrl]="imageUrl"></app-image>
+</div>
